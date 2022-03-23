@@ -379,6 +379,9 @@ header:not(#header) {
 	margin-top: 15rem;
 	position: relative;
 	font-size: 16px;
+
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 }
 
 #footer::before {
@@ -428,6 +431,12 @@ header:not(#header) {
 	gap: 3rem;
 }
 
+@media (max-width: 817px) {
+	#footer-right {
+		order: -1;
+	}
+}
+
 #footer-info,
 #newsletter {
 	display: flex;
@@ -438,6 +447,7 @@ header:not(#header) {
 #footer-logo {
 	width: clamp(120px, 24vw, 200px);
 }
+
 #contact ul {
 	display: flex;
 	flex-direction: column;
@@ -447,6 +457,7 @@ header:not(#header) {
 #contact li > a {
 	display: flex;
 	gap: 1rem;
+	width: fit-content;
 }
 
 address .svg-container {
